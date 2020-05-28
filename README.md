@@ -2,4 +2,11 @@
 
 MonoChrome Theme for Cinnamon
 
-GTK-3 
+Theme Based : [MINT-Y](https://github.com/linuxmint/mint-y-theme)
+
+ License: GPL v3
+
+
+
+V0.1
+

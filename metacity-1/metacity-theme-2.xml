@@ -10,22 +10,22 @@
 
 <!-- meaningfull constants -->
 
-<constant name="C_title_focused" value="#404040" />
-<constant name="C_title_unfocused" value="#9d9d9d" />
+<constant name="C_title_focused" value="#f5f5f5" />
+<constant name="C_title_unfocused" value="#f5f5f5" />
 
-<constant name="C_wm_bg_focused" value="#d9d9d9" />
-<constant name="C_wm_bg_unfocused" value="#d9d9d9" />
+<constant name="C_wm_bg_focused" value="#f5f5f5" />
+<constant name="C_wm_bg_unfocused" value="#f5f5f5" />
 
-<constant name="C_wm_highlight" value="#eeeeee" />
+<constant name="C_wm_highlight" value="#f5f5f5" />
 
 <!-- window button colors -->
 
 <!-- close -->
-<constant name="C_button_close_bg_focused" value="#92b372" />
-<constant name="C_button_close_bg_hover" value="shade/#92b372/1.14" />
-<constant name="C_button_close_bg_active" value="shade/#92b372/0.8" />
+<constant name="C_button_close_bg_focused" value="#D9D9D9" />
+<constant name="C_button_close_bg_hover" value="#D9D9D9" />
+<constant name="C_button_close_bg_active" value="#D9D9D9" />
 
-<constant name="C_icon_close_bg" value="#F8F8F8" />
+<constant name="C_icon_close_bg" value="#f5f5f5" />
 
 <!-- minimize, maximize -->
 <constant name="C_button_bg_hover" value="#ffffff" />
@@ -61,7 +61,7 @@
 	<distance name="right_width" value="0" />
 	<distance name="left_titlebar_edge" value="2"/>
 	<distance name="right_titlebar_edge" value="2"/>
-	<distance name="title_vertical_pad" value="2"/> <!-- 
+	<distance name="title_vertical_pad" value="2"/> <!--
 							This needs to be 1 less then the
 							title_vertical_pad on normal state
 							or you'll have bigger buttons		-->

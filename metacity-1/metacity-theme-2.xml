@@ -1,41 +1,41 @@
 <?xml version="1.0"?>
 <metacity_theme>
-<info>
-	<name>MonoChrome Light</name>
-	<author>Akash Chaudhari</author>
-	<copyright>Akash Chaudhari</copyright>
-	<date>2020</date>
-	<description>A MonoChrome Theme</description>
-</info>
+	<info>
+		<name>MonoChrome-Light</name>
+		<author>Akash Chaudhari</author>
+		<copyright>Akash Chaudhari</copyright>
+		<date>2020</date>
+		<description>MonoChrome Light Theme</description>
+	</info>
 
 <!-- meaningfull constants -->
 
-<constant name="C_title_focused" value="#f5f5f5" />
-<constant name="C_title_unfocused" value="#f5f5f5" />
+<constant name="C_title_focused" value="#dedede" />
+<constant name="C_title_unfocused" value="shade/#d7cfcf/0.6" />
 
-<constant name="C_wm_bg_focused" value="#f5f5f5" />
-<constant name="C_wm_bg_unfocused" value="#f5f5f5" />
+<constant name="C_wm_bg_focused" value="#2f2f2f" />
+<constant name="C_wm_bg_unfocused" value="#2f2f2f" />
 
-<constant name="C_wm_highlight" value="#f5f5f5" />
+<constant name="C_wm_highlight" value="#373737" />
 
 <!-- window button colors -->
 
 <!-- close -->
-<constant name="C_button_close_bg_focused" value="#D9D9D9" />
-<constant name="C_button_close_bg_hover" value="#D9D9D9" />
-<constant name="C_button_close_bg_active" value="#D9D9D9" />
+<constant name="C_button_close_bg_focused" value="#92b372" />
+<constant name="C_button_close_bg_hover" value="shade/#92b372/1.14" />
+<constant name="C_button_close_bg_active" value="shade/#92b372/0.8" />
 
-<constant name="C_icon_close_bg" value="#f5f5f5" />
+<constant name="C_icon_close_bg" value="#2f2f2f" />
 
 <!-- minimize, maximize -->
-<constant name="C_button_bg_hover" value="#ffffff" />
-<constant name="C_button_bg_active" value="#909090" />
+<constant name="C_button_bg_hover" value="#4C4C4C" />
+<constant name="C_button_bg_active" value="#949494" />
 
-<constant name="C_button_border_hover" value="#D1D1D1" />
+<constant name="C_button_border_hover" value="#262626" />
 
-<constant name="C_icon_bg_focused" value="#404040" />
-<constant name="C_icon_bg_unfocused" value="#B6B6B6" />
-<constant name="C_icon_bg_hover" value="#404040" />
+<constant name="C_icon_bg_focused" value="#909090" />
+<constant name="C_icon_bg_unfocused" value="#666666" />
+<constant name="C_icon_bg_hover" value="#C4C4C4" />
 <constant name="C_icon_bg_active" value="#ffffff" />
 
 <!-- geometries -->
@@ -49,8 +49,8 @@
 	<distance name="title_vertical_pad" value="3"/>
 	<border name="title_border" left="10" right="10" top="3" bottom="3"/>
 	<border name="button_border" left="0" right="0" top="0" bottom="0"/>
-  	<distance name="button_width" value="30"/>
-  	<distance name="button_height" value="16"/>
+  <distance name="button_width" value="30"/>
+  <distance name="button_height" value="16"/>
 </frame_geometry>
 
 <frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="1" rounded_top_right="1" parent="normal">
@@ -59,6 +59,7 @@
 <frame_geometry name="max" title_scale="medium" parent="normal" rounded_top_left="false" rounded_top_right="false">
 	<distance name="left_width" value="0" />
 	<distance name="right_width" value="0" />
+	<distance name="bottom_height" value="0" />
 	<distance name="left_titlebar_edge" value="2"/>
 	<distance name="right_titlebar_edge" value="2"/>
 	<distance name="title_vertical_pad" value="2"/> <!--

@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-	<name>MonoChrome Light</name>
+	<name>MonoChrome-Light</name>
 	<author>Akash Chaudhari</author>
 	<copyright>Akash Chaudhari</copyright>
 	<date>2020</date>
-	<description>A MonoChrome Theme</description>
-</info>>
+	<description>MonoChrome Light Theme</description>
+</info>
 
 <!-- meaningfull constants -->
 
-<constant name="C_title_focused" value="rgba(64,64,64,1.0)" />
-<constant name="C_title_unfocused" value="rgba(157,157,157,1.0)" />
+<constant name="C_title_focused" value="#000000" />
+<constant name="C_title_unfocused" value="#000000" />
 
 <constant name="C_wm_bg_focused" value="#f5f5f5" />
 <constant name="C_wm_bg_unfocused" value="#f5f5f5" />
@@ -23,21 +23,21 @@
 <!-- window button colors -->
 
 <!-- close -->
-<constant name="C_button_close_bg_focused" value="#D9D9D9" />
-<constant name="C_button_close_bg_hover" value="#D9D9D9" />
-<constant name="C_button_close_bg_active" value="#D9D9D9" />
+<constant name="C_button_close_bg_focused" value="gtk:custom(selected_bg_color,#92b372)" />
+<constant name="C_button_close_bg_hover" value="shade/gtk:custom(selected_bg_color,#92b372)/1.14" />
+<constant name="C_button_close_bg_active" value="shade/gtk:custom(selected_bg_color,#92b372)/0.8" />
 
-<constant name="C_icon_close_bg" value="#f5f5f5" />
+<constant name="C_icon_close_bg" value="#2f2f2f" />
 
 <!-- minimize, maximize -->
-<constant name="C_button_bg_hover" value="#ffffff" />
-<constant name="C_button_bg_active" value="#909090" />
+<constant name="C_button_bg_hover" value="#4C4C4C" />
+<constant name="C_button_bg_active" value="#949494" />
 
-<constant name="C_button_border_hover" value="#D1D1D1" />
+<constant name="C_button_border_hover" value="#262626" />
 
-<constant name="C_icon_bg_focused" value="#404040" />
-<constant name="C_icon_bg_unfocused" value="#B6B6B6" />
-<constant name="C_icon_bg_hover" value="#404040" />
+<constant name="C_icon_bg_focused" value="#909090" />
+<constant name="C_icon_bg_unfocused" value="#666666" />
+<constant name="C_icon_bg_hover" value="#C4C4C4" />
 <constant name="C_icon_bg_active" value="#ffffff" />
 
 <!-- geometries -->
@@ -61,8 +61,8 @@
 <frame_geometry name="max" title_scale="medium" parent="normal" rounded_top_left="false" rounded_top_right="false">
 	<distance name="left_width" value="0" />
 	<distance name="right_width" value="0" />
-	<distance name="left_titlebar_edge" value="0"/>
-	<distance name="right_titlebar_edge" value="0"/>
+	<distance name="left_titlebar_edge" value="2"/>
+	<distance name="right_titlebar_edge" value="2"/>
 	<distance name="title_vertical_pad" value="2"/> <!--
 							This needs to be 1 less then the
 							title_vertical_pad on normal state
@@ -183,16 +183,6 @@
 
 <draw_ops name="border_unfocused">
 	<rectangle color="C_wm_bg_unfocused" x="0" y="0" width="width" height="height" filled="false" />
-</draw_ops>
-
-<draw_ops name="border_tiled_right">
-	<line x1="0" y1="0" x2="0" y2="height" color="C_wm_border" />
-	<line x1="1" y1="height-1" x2="width" y2="height-1" color="C_wm_border" />
-</draw_ops>
-
-<draw_ops name="border_tiled_left">
-	<line x1="width-1" y1="0" x2="width-1" y2="height" color="C_wm_border" />
-	<line x1="1" y1="height-1" x2="width" y2="height-1" color="C_wm_border" />
 </draw_ops>
 
 <draw_ops name="border_max">
@@ -988,7 +978,6 @@
 
 <frame_style name="tiled_left_focused" geometry="tiled_left">
 	<piece position="entire_background" draw_ops="entire_background_focused" />
-	<piece position="overlay" draw_ops="border_tiled_left" />
 	<piece position="titlebar" draw_ops="titlebar_focused" />
 	<piece position="title" draw_ops="title_focused" />
 	<button function="close" state="normal" draw_ops="close_focused" />
@@ -1023,7 +1012,6 @@
 
 <frame_style name="tiled_left_unfocused" geometry="tiled_left">
 	<piece position="entire_background" draw_ops="entire_background_unfocused" />
-	<piece position="overlay" draw_ops="border_tiled_left" />
 	<piece position="titlebar" draw_ops="titlebar_unfocused" />
 	<piece position="title" draw_ops="title_unfocused" />
 	<button function="close" state="normal" draw_ops="close_unfocused"/>
@@ -1058,7 +1046,6 @@
 
 <frame_style name="tiled_right_focused" geometry="tiled_right">
 	<piece position="entire_background" draw_ops="entire_background_focused" />
-	<piece position="overlay" draw_ops="border_tiled_right" />
 	<piece position="titlebar" draw_ops="titlebar_focused" />
 	<piece position="title" draw_ops="title_focused" />
 	<button function="close" state="normal" draw_ops="close_focused" />
@@ -1093,7 +1080,6 @@
 
 <frame_style name="tiled_right_unfocused" geometry="tiled_right">
 	<piece position="entire_background" draw_ops="entire_background_unfocused" />
-	<piece position="overlay" draw_ops="border_tiled_right" />
 	<piece position="titlebar" draw_ops="titlebar_unfocused" />
 	<piece position="title" draw_ops="title_unfocused" />
 	<button function="close" state="normal" draw_ops="close_unfocused"/>
